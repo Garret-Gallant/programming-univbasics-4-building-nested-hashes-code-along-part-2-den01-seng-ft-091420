@@ -24,7 +24,7 @@ def update_status
     epic_tragedy[:montague] [:hero] [:status] = "dead"
     epic_tragedy[:capulet] [:heroine] [:status] = "dead"
     
-    return epic_tragedy
+    epic_tragedy
 end
 
 def add_characters
@@ -58,7 +58,8 @@ def add_characters
    # Code your solution here:
    
    epic_tragedy = 
-    {:additional_characters [
+    [:additional_characters] =
+      [
       {name: "Prince Escalus"}
       {name: "Apothecary"}
       ]
